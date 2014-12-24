@@ -1,0 +1,30 @@
+.foo {
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ background: linear-gradient(to bottom, white, black)
+}
+.cc{
+	display: inline-block;
+	transition:all 1s ease-in-out;
+	word-wrap: break-word;
+}
+.ddd{
+	flex: 1;
+}
+.c{
+	width: 20px;
+	height: 20px;
+	background: #CCC;
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	animation:mymove 5s linear;
+}
+@keyframes mymove{
+	0%{left: 500px;top: 100px;}
+	20%{transform:rotate(15deg);}
+	40%,80%{transform:rotate(0deg);}
+	60%{transform:rotate(-15deg);}
+	100%{left: 0px;transform:rotate(15deg);top: 0px;}
+}
