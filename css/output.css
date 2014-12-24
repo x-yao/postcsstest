@@ -12,12 +12,6 @@
 	        transition:all 1s ease-in-out;
 	word-wrap: break-word;
 }
-.ddd{
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-}
 .c{
 	width: 20px;
 	height: 20px;
