@@ -131,66 +131,66 @@ section{
 }
 #c3{
 	position: absolute;
-	left: 20%;
-	width: 40px;
-	top: 30%;
+	left: 0;
+	width: 70px;
+	top: 25%;
 }
 #c4{
 	position: absolute;
 	right: 20%;
-	width: 70px;
+	width: 30px;
 	top: 20%;
 }
 #c5{
 	position: absolute;
 	right: 30%;
-	width: 70px;
+	width: 60px;
 	top: 30%;
 }
 #c6{
 	position: absolute;
 	right: 10%;
-	width: 70px;
-	top: 30%;
+	width: 40px;
+	top: 20%;
 }
 
 #c7{
 	position: absolute;
-	right: 30%;
+	right: 20%;
 	width: 70px;
-	top: 30%;
+	top: 15%;
 }
 
 #c8{
 	position: absolute;
-	right: 30%;
-	width: 70px;
-	top: 30%;
+	left: 0;
+	width: 60px;
+	top: 25%;
 }
 
 #c9{
 	position: absolute;
-	right: 30%;
-	width: 70px;
-	top: 30%;
+	left: 15%;
+	width: 40px;
+	top: 32%;
 }
 #c10{
 	position: absolute;
-	right: 30%;
+	right: 10%;
 	width: 70px;
-	top: 30%;
+	top: 5%;
 }
 #c11{
 	position: absolute;
 	right: 30%;
-	width: 70px;
-	top: 30%;
+	width: 50px;
+	top: 10%;
 }
 #c12{
 	position: absolute;
-	right: 30%;
-	width: 70px;
-	top: 30%;
+	right: 40%;
+	width: 50px;
+	top: 25%;
 }
 #pilogo_con{
 	position: absolute;
@@ -215,7 +215,7 @@ section{
 #pibee2_con{
 	position: absolute;
 	width: 100%;
-	top: 30%;
+	bottom: 360px;
 	left: 15%;
 }
 #p1bee2{
@@ -226,13 +226,13 @@ section{
 #p2b1{
 	position: absolute;
 	width: 86px;
-	top: 120px;
+	top: 150px;
 	left: 100px;
 }
 #p2b2{
 	position: absolute;
 	width: 118px;
-	top: 120px;
+	top: 180px;
 }
 .p3bac{
 	height: 100%;
@@ -445,6 +445,13 @@ section{
 	   -moz-animation-fill-mode:forwards;
 	     -o-animation-fill-mode:forwards;
 	        animation-fill-mode:forwards;
+}
+.a_znyx{
+	-webkit-animation:znyx .2s ease-in-out 1.2s;
+	   -moz-animation:znyx .2s ease-in-out 1.2s;
+	     -o-animation:znyx .2s ease-in-out 1.2s;
+	        animation:znyx .2s ease-in-out 1.2s;
+	/*animation-iteration-count:2;*/
 }
 .fall{
 	-webkit-transform:translateY(-600px);
@@ -662,6 +669,27 @@ section{
 	0%{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);}
 	100%{-webkit-transform:translate(100px,-600px);-moz-transform:translate(100px,-600px);-o-transform:translate(100px,-600px);transform:translate(100px,-600px);}
 }
+@-webkit-keyframes znyx {
+	0%{-webkit-transform:translate(0,0);transform:translate(0,0);}
+	50%{-webkit-transform:translate(5px,5px);transform:translate(5px,5px);}
+	100%{-webkit-transform:translate(0,0);transform:translate(0,0);}
+}
+@-moz-keyframes znyx {
+	0%{-moz-transform:translate(0,0);transform:translate(0,0);}
+	50%{-moz-transform:translate(5px,5px);transform:translate(5px,5px);}
+	100%{-moz-transform:translate(0,0);transform:translate(0,0);}
+}
+@-o-keyframes znyx {
+	0%{-o-transform:translate(0,0);transform:translate(0,0);}
+	50%{-o-transform:translate(5px,5px);transform:translate(5px,5px);}
+	100%{-o-transform:translate(0,0);transform:translate(0,0);}
+}
+@keyframes znyx {
+	0%{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);}
+	50%{-webkit-transform:translate(5px,5px);-moz-transform:translate(5px,5px);-o-transform:translate(5px,5px);transform:translate(5px,5px);}
+	100%{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);}
+}
+
 
 
 

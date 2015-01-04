@@ -36,6 +36,7 @@ $(document).ready(function() {
 		} else if(page == 3){
 			$(".meee").addClass("a_fall");
 			$(".noo").addClass("a_chuxian");
+			// $(".part4").addClass("a_znyx");
 		} else if (page == 4) {
 			$(".bee5").addClass("a_beechuxian1");
 			$(".huojian").addClass("a_huojian");
