@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>我的2014招聘之旅 by Beisen</title>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="format-detection" content="telephone=no"/>
@@ -11,34 +11,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="css/output.css">
+    <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+    <script>
+		var load = 0
+		function imgload(){
+			load ++;
+			if (load == 26) {
+				$(".a_onload").attr("load-done","true").addClass("a_loading");
+			};
+			if(load == 1){
+				setTimeout(function(){
+				$(".wait10").removeClass("dpnone");
+				},10000);
+			}
+			console.log(load);
+		}
+	</script>
     </head>
 	<body>
 		<div class="content">
-			<section class="part1">
+			<div class="a_onload" load-done="">
+				<div class="loading"></div>
+				<p>载入中，建议在wifi环境下浏览</p>
+				<p class="wait10 dpnone">当前网速过慢，请耐心等候，或者刷新重试</p>
+			</div>
+			<img src="images/fenxiang400.png" alt="" style="height:0;width:0;overflow:hidden;position:absolute;">
+			<section class="part1" ani-state="2">
 				<div class="p1back">
-					<img src="images/picbac.png" alt="" class="a_p1bac2">
+					<img src="images/picbac.png" alt="" class="a_p1bac2" onload="imgload()">
 				</div>
-				<img src="images/cloud.png" alt="" id="c1" class="cloud a_cloudm">
+				<img src="images/cloud.png" alt="" id="c1" class="cloud a_cloudm" onload="imgload()">
 				<img src="images/cloud.png" alt="" id="c2" class="cloud a_cloudm">
 				<div id="pilogo_con">
-					<img src="images/p1logo.png" alt="" id="p1logo">
+					<img src="images/p1logo.png" alt="" id="p1logo" onload="imgload()">
 				</div>
 				<div id="pibee_con">
-					<img src="images/bee.png" alt="" id="p1bee" class="a_bee">
+					<img src="images/bee.png" alt="" id="p1bee" class="a_bee" onload="imgload()">
 				</div>
+				<footer><div class="footer">powered by <img src="images/logo.png"></div></footer>
+				<div class="arr"><img src="images/arr.png" alt="" id="arr" class="a_arr" onload="imgload()">
+				</div>			
 			</section>
-			<section class="part2">
-				<img src="images/p2bac.png" alt="" id="p2bac" class="part_bac">
+			<section class="part2" ani-state="0">
 				<img src="images/cloud.png" alt="" id="c3" class="cloud delay5 a_cloud">
 				<img src="images/cloud.png" alt="" id="c4" class="cloud a_cloud">
 				<img src="images/cloud.png" alt="" id="c5" class="cloud delay10 a_cloud">
+				<img src="images/p2bac.png" alt="" id="p2bac" class="part_bac" onload="imgload()">
 				<div id="pibee2_con">
-					<img src="images/bee1.png" alt="" id="p1bee2" class="a_bee bee">
-					<img src="images/p2b1.png" alt="" id="p2b1" class="fall">
-					<img src="images/p2b2.png" alt="" id="p2b2" class="fall">
+					<img src="images/bee1.png" alt="" id="p1bee2" class="a_bee bee" onload="imgload()">
+					<img src="images/p2b1.png" alt="" id="p2b1" class="fall" onload="imgload()">
+					<img src="images/p2b2.png" alt="" id="p2b2" class="fall" onload="imgload()">
 				</div>
+				<div class="word_p1 word"></div>
+				<img src="images/qiuxian.png" alt="" id="qiuxian" class="zhangzi zhangzi1" onload="imgload()">
+				<footer><div class="footer">powered by <img src="images/logo.png"></div></footer>
 			</section>
-			<section class="part3">
+			<section class="part3" ani-state="0">
 			<div class="p3bac"></div>
 			<img src="images/cloud.png" alt="" id="c6" class="cloud a_cloud">
 			<img src="images/cloud.png" alt="" id="c7" class="cloud a_cloud">
@@ -46,34 +74,43 @@
 			<img src="images/cloud.png" alt="" id="c9" class="cloud a_cloud">
 			<div class="island">
 				<!-- <img src="images/ping.svg" alt="" id="p3p1" class="ping"> -->
-				<img src="images/he2.svg" alt="" id="he2" class="he a_river2">
-				<img src="images/shan.png" alt="" id="shan">
+				<img src="images/he2.svg" alt="" id="he2" class="he a_river2" onload="imgload()">
+				<img src="images/shan.png" alt="" id="shan" onload="imgload()">
 				<!-- <img src="images/ping.svg" alt="" id="p3p2" class="ping"> -->
-				<img src="images/bee2.png" alt="" id="p3bee">
-				<img src="images/he.svg" alt="" class="he a_river" id="he">	
-				<img src="images/island.png" alt="" id="p3isl">
+				<img src="images/bee2.png" alt="" id="p3bee" onload="imgload()">
+				<img src="images/he.svg" alt="" class="he a_river" id="he" onload="imgload()">	
+				<img src="images/island.png" alt="" id="p3isl" onload="imgload()">
 			</div>
+			<img src="images/yueren.png" alt="" id="yueren" class="zhangzi zhangzi1" onload="imgload()">
+			<img src="images/yihu.png" alt="" id="yihu" class="zhangzi zhangzi2" onload="imgload()">
+			<footer><div class="footer">powered by <img src="images/logo.png"></div></footer>
+			<div class="word_p2 word"></div>
 			</section>
-			<section class="part4">
-				<img src="images/p4bac.png" alt="" id="p4bac" class="part_bac">
+			<section class="part4" ani-state="0">
+				<img src="images/p4bac.png" alt="" id="p4bac" class="part_bac" onload="imgload()">
 				<img src="images/cloud.png" alt="" id="c10" class="cloud a_cloud">
 				<img src="images/cloud.png" alt="" id="c11" class="cloud a_cloud">
 				<img src="images/cloud.png" alt="" id="c12" class="cloud a_cloud">
-				<img src="images/sun.png" alt="" id="p4sun" class="">
+				<img src="images/sun.png" alt="" id="p4sun" class="" onload="imgload()">
 				<div class="mee">
-					<img src="images/mee.png" alt="" id="p4mee" class="meee">
-					<img src="images/no.png" alt="" id="p4no" class="noo">
+					<img src="images/mee.png" alt="" id="p4mee" class="meee" onload="imgload()">
+					<img src="images/no.png" alt="" id="p4no" class="noo" onload="imgload()">
 				</div>
+				<div class="word_p3 word"></div>
+				<img src="images/bamian.png" alt="" id="bamian" class="zhangzi zhangzi1" onload="imgload()">
+				<img src="images/lixian.png" alt="" id="lixian" class="zhangzi zhangzi2" onload="imgload()">
+			<footer><div class="footer">powered by <img src="images/logo.png"></div></footer>
 			</section>
-			<section class="part5">
-				<img src="images/p5bac.png" alt="" id="p5bac" class="part_bac">
+			<section class="part5" ani-state="0">
+				<img src="images/p5bac.png" alt="" id="p5bac" class="part_bac" onload="imgload()">
 				<div class="p5contain">
-					<img src="images/bee5.png" alt="" id="bee5" class="bee5">
-					<img src="images/huojian.png" alt="" id="p5roc" class="huojian">
+					<img src="images/bee5.png" alt="" id="bee5" class="bee5" onload="imgload()">
+					<img src="images/huojian.png" alt="" id="p5roc" class="huojian" onload="imgload()">
 				</div>
+				<footer><div class="footer">powered by <img src="images/logo.png"></div></footer>
 			</section>
 		</div>	
 	</body>
-	<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+	<script src="js/underscore-min.js"></script>
 	<script src="js/main.js"></script>
 </html>

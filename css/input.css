@@ -4,8 +4,45 @@
 	width: auto;
 	height: auto;
 }
-html{
-	font-size: 20px;
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+    .p1back img{
+    	width: 200% !important;
+    }
+    .footer{
+    	width: 300px !important;
+    }
+    .footer img{
+    	width: 80px !important;
+    }
+    .mee #p4mee{
+    	transform:translateY(-1200px);
+    }
 }
 body{
 	position: absolute;
@@ -20,6 +57,64 @@ section{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	z-index: 100;
+}
+.a_onload{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #8cbfee;
+	z-index: 999;
+	padding-top: 3rem;
+	transition:opacity 1s ease-in-out;
+}
+.loading{
+	border:solid .5rem #FFF;
+	width: 1rem;
+	height: 1rem;
+	margin: 4rem auto;
+	border-left-color: transparent;
+	border-right-color: transparent; 
+	padding: 2rem;
+	border-radius: 50%;
+	background-clip: content-box;
+	animation: loading 1.5s ease-in-out infinite;
+}
+.a_onload p{
+	font-size: 0.8rem;
+	width: 12rem;
+	margin: 0 auto;
+	color: #FFF;
+}
+#svgcontent{
+	position: absolute;
+	z-index: 100;
+}
+.footer{
+	margin: 0 auto;
+	width: 150px;
+	font-size: 0.6rem;
+	color: #FFF;
+}
+.footer img{
+	width: 50px;
+	display: inline;
+}
+#arr{
+	width: 40px;
+	display: block;
+	margin: 0 auto;
+}
+.arr{
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
 }
 .content{
 	position: relative;
@@ -36,6 +131,10 @@ section{
 /*	background-image: url('../images/picbac.png') no-repeat;*/
 	/*background-size:100%;*/
 }
+/*#p2bac{
+	bottom: -20px;
+}
+*/
 .part3{
 	background: #6cb2b0;
 }
@@ -48,7 +147,7 @@ section{
 .part_bac{
 	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: -20px;
 }
 .part5{
 	background: #384e66;
@@ -83,6 +182,13 @@ section{
 .delay10{
 	animation-delay:1s;
 }
+.delay15{
+	animation-delay:1.5s;
+}
+.delay20{
+	animation-delay:2s;
+}
+
 #c1{
 	position: absolute;
 	left: 20%;
@@ -113,20 +219,20 @@ section{
 	position: absolute;
 	right: 30%;
 	width: 60px;
-	top: 30%;
+	top: 15%;
 }
 #c6{
 	position: absolute;
 	right: 10%;
 	width: 40px;
-	top: 20%;
+	top: 32%;
 }
 
 #c7{
 	position: absolute;
 	right: 20%;
 	width: 70px;
-	top: 15%;
+	top: 30%;
 }
 
 #c8{
@@ -164,6 +270,7 @@ section{
 	position: absolute;
 	width: 100%;
 	top: 20%;
+	z-index: 100;
 }
 #p1logo{
 	display: block;
@@ -183,7 +290,7 @@ section{
 #pibee2_con{
 	position: absolute;
 	width: 100%;
-	bottom: 360px;
+	bottom: 315px;
 	left: 15%;
 }
 #p1bee2{
@@ -212,7 +319,7 @@ section{
 	position: absolute;
 	width: 100%;
 	height: 60%;
-	bottom: 0;
+	bottom: -20px;
 }
 .he{
 	position: absolute;
@@ -264,7 +371,7 @@ section{
 .mee{
 	position: absolute;
 	right: 50%;
-	bottom: 240px;
+	bottom: 220px;
 }
 #p4mee{
 	width: 114px;
@@ -296,6 +403,31 @@ section{
 	width: 198px;
 	opacity: 0;
 }
+.zhangzi{
+	position: absolute;
+	width:110px;
+	opacity: 0;
+}
+#qiuxian{
+	top: 70%;
+	right: 20%;
+}
+#bamian{
+	top: 80%;
+	right: 10%;
+}
+#lixian{
+	top: 75%;
+	left: 10%;
+}
+#yueren{
+	top: 70%;
+	right: 10%;
+}
+#yihu{
+	top: 75%;
+	left: 10%;
+}
 .a_cloud{
 	animation-duration: 4s;
 	animation-name: cloud;
@@ -319,13 +451,17 @@ section{
 .a_p1bac2{
 	animation:p1bac2 25s linear infinite;
 }
+.a_arr{
+	animation:arrd 1s ease-in-out infinite;
+	animation-direction: alternate;
+}
 .a_fall{
 	animation:fall 1s ease 1.2s;
 	animation-fill-mode:forwards;
 	/*animation-delay:1s;*/
 }
 .a_huojian{
-	animation:huojian 2s cubic-bezier(.96,.03,.81,.31) 2.4s;
+	animation:huojian 1.6s cubic-bezier(.96,.03,.81,.31) 2.4s;
 	animation-fill-mode:forwards;
 	/*animation-delay:1s;*/
 }
@@ -342,12 +478,32 @@ section{
 	animation:beein 2s ease-in-out;
 	animation-fill-mode:forwards;
 }
+.a_zhangzi2{
+	animation:zhangzi .6s cubic-bezier(.76,.28,.83,.35) 1.7s;
+	animation-fill-mode:forwards;
+}
+.a_zhangzi1{
+	animation:zhangzi .6s cubic-bezier(.76,.28,.83,.35) 1.2s;
+	animation-fill-mode:forwards;
+}
 .a_znyx{
 	animation:znyx .2s ease-in-out 1.2s;
 	/*animation-iteration-count:2;*/
 }
 .fall{
 	transform:translateY(-600px);
+}
+.a_word_in{
+	animation:wordin 1.2s ease-in-out;
+	animation-fill-mode:forwards;
+}
+.a_word_out{
+	animation:wordout 1.2s ease-in-out;
+	animation-fill-mode:forwards;
+}
+.a_loading{
+	animation:bacloading 1s ease-in-out;
+	animation-fill-mode:forwards;
 }
 .p1back{
 	position: absolute;
@@ -362,6 +518,44 @@ section{
 .dpnone{
 	display: none;
 }
+.word {
+	position: absolute;
+	z-index: 100;
+	top: 8%;
+	width: 300px;
+	margin: 0 auto;
+	left: 10%;
+}
+.word div{
+	position: absolute;
+	width: 100%;
+	font-size: 1rem;
+	opacity: 0;
+}
+.word strong,.word .str,.word .num{
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+.word_p1{
+	color: #58752a;
+}
+.word_p1 .word_date,.word_p1 .num,.word_p1 .str{
+	color: #cc6603;
+}
+.word_p2{
+	color: #fff3d9;
+}
+.word_p2 .word_date,.word_p2 .num,.word_p2 .str{
+	color: #236881;
+}
+
+.word_p3{
+	color: #407b62;
+}
+.word_p3 .word_date,.word_p3 .num,.word_p3 .str{
+	color: #c37c47;
+}
+
 @keyframes cloudm {
 	0%{transform:translateX(320px);}
 	/*50%{transform:translateX(20px);}*/
@@ -416,6 +610,34 @@ section{
 	50%{transform:translate(5px,5px);}
 	100%{transform:translate(0,0);}
 }
+@keyframes wordin {
+	0%{transform:translateY(20px);opacity: 0;}
+	100%{transform:translateY(-5px);opacity: 1;}
+}
+@keyframes wordout {
+	0%{transform:translateY(-5px);opacity: 1;}
+	100%{transform:translateY(-20px);opacity: 0;}
+}
+@keyframes arrd {
+	0%{transform:translateY(-10px);opacity: 1;}
+	100%{transform:translateY(10px);opacity: .4;}
+}
+@keyframes zhangzi {
+	0%{transform:scale(4);opacity: .4;}
+	100%{transform:scale(1);opacity: 1;}
+}
+@keyframes bacloading {
+	0%{opacity: 1;}
+	100%{opacity: 0;display: none;}
+}
+@keyframes loading {
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(180deg);}
+}
+
+
+
+
 
 
 
