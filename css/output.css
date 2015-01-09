@@ -492,6 +492,18 @@ footer{
 	top: 75%;
 	left: 10%;
 }
+.fenxiang{
+	background: rgba(0,0,0,.6);
+	color: #FFF;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	padding-top: 100px;
+	opacity:0;
+	z-index: 100;
+}
 .a_cloud{
 	-webkit-animation-duration: 4s;
 	   -moz-animation-duration: 4s;
@@ -673,6 +685,17 @@ footer{
 	     -o-animation-fill-mode:forwards;
 	        animation-fill-mode:forwards;
 }
+.a_fenxiang{
+	-webkit-animation:fenxiang .6s ease-in-out 3s;
+	   -moz-animation:fenxiang .6s ease-in-out 3s;
+	     -o-animation:fenxiang .6s ease-in-out 3s;
+	        animation:fenxiang .6s ease-in-out 3s;
+	-webkit-animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	     -o-animation-fill-mode:forwards;
+	        animation-fill-mode:forwards;
+}
+
 .p1back{
 	position: absolute;
 	width: 100%;
@@ -1038,6 +1061,22 @@ footer{
 @keyframes loading {
 	0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);}
 	100%{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
+}
+@-webkit-keyframes fenxiang {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-moz-keyframes fenxiang {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-o-keyframes fenxiang {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes fenxiang {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 

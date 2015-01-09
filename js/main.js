@@ -64,6 +64,7 @@ $(document).ready(function() {
 		} else if (page == 4) {
 			$(".bee5").addClass("a_beechuxian1");
 			$(".huojian").addClass("a_huojian");
+			$(".fenxiang").addClass("a_fenxiang");
 		};
 		$("body").off("touchmove");
 	});
